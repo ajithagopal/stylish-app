@@ -1,0 +1,279 @@
+.home-cont {
+  position: relative;
+}
+
+.first-des {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 6rem 8rem;
+}
+
+.first-desc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  width: 100%;
+  margin: auto;
+}
+
+.des-text {
+  width: 45%;
+  text-align: start;
+  font-size: 1.1rem;
+}
+
+.head {
+  font-size: 2.4rem;
+  font-weight: 200;
+}
+.desc {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 25px;
+}
+
+.company-name {
+  font-style: italic;
+  color: #e22b63;
+  font-weight: 600;
+}
+
+.sub-comp-name {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.image {
+  position: relative;
+  width: 50%;
+  height: 350px;
+  display: flex;
+  justify-content: space-between;
+  z-index: -99;
+}
+
+.image img {
+  width: 49%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: -1px 1px 62px -18px rgba(0, 0, 0, 0.19);
+}
+
+.image img:nth-child(2) {
+  position: absolute;
+  top: -30px;
+  right: 0;
+}
+
+@media screen and (max-width: 900px) {
+  .first-des {
+    display: flex;
+    flex-direction: column;
+    margin: 4rem 2rem;
+  }
+
+  .des-text {
+    width: 100%;
+  }
+  .head {
+    font-size: 2rem;
+  }
+  .image {
+    width: 100%;
+    height: 250px;
+    margin: 1.8rem 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .head {
+    font-size: 3rem;
+  }
+}
+
+.video-cont {
+  max-width: 100%;
+  height: 600px;
+  margin-bottom: 3rem;
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .video-cont {
+    height: 450px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .video-cont {
+    height: 300px;
+  }
+}
+
+.services {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  background-color: #e22b63;
+}
+
+.service-des {
+  margin: 4rem 8rem;
+}
+
+.services h1 {
+  text-align: start;
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+
+.services-list {
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 40px;
+}
+
+.services-item {
+  text-align: start;
+  flex: 1 0 305px;
+}
+
+.services-item h2 {
+  font-size: 2rem;
+  font-weight: 350;
+}
+
+.services-item p {
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.service-vist-btn button {
+  align-self: center;
+  border: none;
+  outline: none;
+  color: #e22b63;
+  background-color: #fff;
+  font-size: 1.1rem;
+  padding: 1rem 1.5rem;
+  font-weight: 400;
+}
+
+.service-vist-btn button:hover {
+  border-bottom: 10px solid #e22b63;
+  transition: 0.3s ease-out;
+}
+
+@media screen and (max-width: 900px) {
+  .service-des {
+    margin: 4rem 2rem;
+  }
+  .services h1 {
+    font-size: 3.2rem;
+  }
+}
+
+.book-visit-btn {
+  margin: 5rem 0;
+}
+.book-visit-btn h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  font-family: "Sans serif";
+}
+.book-visit-btn div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.visit-btn {
+  background-color: #fff;
+  color: #e22b63;
+  border: 1px solid #e22b63;
+  width: 240px;
+  font-size: 1.1rem;
+  font-weight: 400;
+  border-radius: 4px;
+  padding: 1rem 1.5rem;
+  outline: none;
+  cursor: pointer;
+}
+.visit-btn:hover {
+  background-color: #e22b63;
+  color: #fff;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .book-visit-btn div {
+    flex-direction: column;
+  }
+}
+
+.restrict-cont {
+  position: fixed;
+  z-index: 99;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.restict-content {
+  position: relative;
+  top: 50%;
+  left: 49%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 300px;
+  width: 90%;
+  max-width: 500px;
+  background-color: #000;
+  color: #e22b63;
+  box-shadow: -1px 1px 62px -18px #e22b63;
+  border-radius: 10px;
+}
+
+.restict-content h2 {
+  font-size: 1.5rem;
+  margin-top: 5px;
+}
+
+.restrict-images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.logo-restrict-img {
+  object-fit: contain;
+  height: 100px;
+}
+
+.restict-content p {
+  font-size: 1rem;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .restrict-images {
+    gap: 0;
+  }
+}

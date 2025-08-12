@@ -1,0 +1,84 @@
+.gal-cont {
+  display: flex;
+  flex-direction: column;
+  margin: 6rem 6rem;
+}
+
+.gal-cont h3 {
+  color: #e22b63;
+  font-size: 3em;
+  font-weight: bolder;
+  display: inline-block;
+  line-height: 20px;
+}
+
+.gal-cont p {
+  color: #e22b63;
+  font-size: 2.5rem;
+  font-family: "Sans serif";
+  align-self: center;
+  border-bottom: 3px solid #e22b63;
+}
+
+.select {
+  display: none;
+}
+
+.tab-list-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  list-style-type: none;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.gal-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+.book-visit-btn span {
+  color: #e22b63;
+  font-family: "Poppins";
+  font-weight: 500;
+}
+
+@media screen and (max-width: 900px) {
+  .gal-cont {
+    margin: 3rem 2rem;
+  }
+  .gal-cont h3 {
+    font-size: 2.5em;
+  }
+  .gal-cont p {
+    font-size: 2em;
+  }
+  .tab-list-cont {
+    display: none;
+  }
+  .select {
+    display: block;
+    align-self: center;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    color: #fff;
+    border: 2px solid #e22b63;
+    background-color: #e22b63;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    padding: 0.5rem;
+    margin: 2rem 0;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #fff;
+  }
+}

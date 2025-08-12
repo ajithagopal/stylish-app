@@ -1,0 +1,58 @@
+.gallery-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 3rem 3rem;
+}
+
+.gal-heading {
+  padding-bottom: 2rem;
+}
+
+.gal-heading h3 {
+  font-size: 3em;
+  font-weight: bolder;
+  color: #e22b63;
+  border-bottom: 3px solid #e22b63;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.dream {
+  display: flex;
+  flex-direction: column;
+  width: 32.5%;
+}
+
+.dream img {
+  width: 100%;
+  padding-bottom: 15px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .gallery-cont {
+    margin: 3rem 2rem;
+  }
+  .gal-heading h3 {
+    font-size: 2.5em;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .gallery-cont {
+    margin: 3rem 2rem;
+  }
+  .box {
+    flex-direction: column;
+  }
+  .dream {
+    width: 100%;
+  }
+}

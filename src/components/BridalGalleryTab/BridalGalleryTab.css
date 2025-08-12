@@ -1,0 +1,16 @@
+.gal-tab-btn {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid #e22b63;
+  color: #e22b63;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.active-tab-btn {
+  background-color: #e22b63;
+  color: #fff;
+}

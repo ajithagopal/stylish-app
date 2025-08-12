@@ -1,0 +1,72 @@
+.contact-cont {
+  display: flex;
+  align-items: flex-start;
+  text-align: start;
+  padding: 3rem 8rem;
+  gap: 2rem;
+}
+
+.cont-text {
+  color: #e22b63;
+  font-size: 3em;
+  font-weight: bolder;
+  border-bottom: 3px solid #e22b63;
+  display: inline-block;
+  padding: 4rem 0 0 0;
+}
+
+.user-msg-form-cont {
+  width: 55%;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border: 1px solid #f8faf9fc;
+  border-radius: 5px;
+  box-shadow: 0 5px 25px 2px rgba(0, 0, 0, 0.11);
+}
+
+.user-msg-form-cont h2 {
+  color: #e22b63;
+  font-size: 2rem;
+  font-weight: 450;
+  text-align: center;
+  margin: 1.1rem 0 0 0;
+}
+
+.address-cont {
+  width: 45%;
+  background-color: #e22b63;
+  color: #fff;
+  border: 1px solid #f8faf9fc;
+  border-radius: 5px;
+  box-shadow: 0 5px 25px 2px rgba(0, 0, 0, 0.11);
+  padding: 1.1rem;
+}
+
+.address-cont h2 {
+  text-align: center;
+}
+
+.contact-details {
+  padding: 1rem;
+}
+
+.contact-details p {
+  margin-left: 2.2rem;
+}
+
+@media screen and (max-width: 992px) {
+  .cont-text {
+    font-size: 2.5em;
+  }
+  .contact-cont {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 2rem;
+  }
+  .user-msg-form-cont {
+    width: 100%;
+  }
+  .address-cont {
+    width: 100%;
+  }
+}

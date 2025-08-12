@@ -1,0 +1,47 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.modal-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #e22b63;
+}
+
+.apnt-btn {
+  transition: scale ease;
+  background-color: #e22b63;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 400;
+  width: 240px;
+  border-radius: 4px;
+  padding: 1rem 1.5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.apnt-btn:hover {
+  transform: scale(1.1);
+  background-color: #e22b63;
+  transition: all 0.3s ease;
+}
+
+.apnt-form-onl-btn {
+  color: #fff;
+  background-color: #e22b63;
+  align-self: center;
+  border: none;
+  outline: none;
+}
+
+@media screen and (max-width: 768px) {
+  .modal-title {
+    font-size: 1.3rem;
+  }
+}

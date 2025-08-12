@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media print {
+  html,
+  body,
+  .app {
+    display: none;
+  }
+}
+
+.app {
+  overflow: hidden;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #282c34;
+}
+
+.active {
+  color: #e22b63;
+  border-bottom: 3px solid #e22b63;
+}
+
+@media screen and (max-width: 1000px) {
+  .active {
+    background-color: #e22b63;
+    color: #fff;
+    border: none;
+  }
+}

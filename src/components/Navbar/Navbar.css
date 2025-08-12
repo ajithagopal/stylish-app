@@ -1,0 +1,124 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e1e1e;
+  height: 100px;
+  width: 100%;
+  padding: 0 3rem;
+  border-bottom: 3px solid #e22b63;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 100px;
+  height: 65px;
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  gap: 2.5rem;
+}
+
+.btn-icons {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+
+.nav-links {
+  margin: 20px 0px 0px 0px;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.05rem;
+}
+
+.course-nav-links {
+  text-decoration: none;
+  margin: 20px 0px 0px 0px;
+}
+
+.nav-links:hover {
+  color: #e22b63;
+  border-bottom: 3px solid #e22b63;
+}
+
+.course-nav {
+  background-color: #e22b63;
+  color: #fff;
+  padding: 0.2rem 1rem;
+  border-radius: 5px;
+  font-size: 1.05rem;
+}
+
+.course-nav:hover {
+  background-color: #fff;
+  color: #e22b63;
+  border-bottom: none;
+}
+
+.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .mobile {
+    display: block;
+  }
+  .nav {
+    z-index: 99;
+    position: relative;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    opacity: 0;
+    align-items: stretch;
+    border-radius: 13px;
+    background-color: #1e1e1e;
+    padding: 100px 0 30px 0px;
+    margin: 0;
+    transition: 0.3s ease-in-out;
+    border-bottom: 3px solid #e22b63;
+  }
+  .navbar.nav-active {
+    left: 0;
+    opacity: 1;
+    z-index: -1;
+  }
+  .nav-links {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    font-size: 1.2rem;
+    padding: 0.7rem 0;
+    color: #fff;
+  }
+  .nav-links:hover {
+    background-color: #e22b63;
+    color: #fff;
+    border: none;
+  }
+  .course-nav {
+    display: inline;
+    align-self: center;
+    font-size: 1.2rem;
+  }
+}

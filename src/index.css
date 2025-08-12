@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+img {
+  pointer-events: none;
+  overflow: hidden;
+}
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E22B63;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background-clip: content-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@media print {
+  html,
+  body {
+    display: none;
+  }
+}

@@ -1,0 +1,80 @@
+.sticky-icon {
+  z-index: 1;
+  position: fixed;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 9;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  transition: all 0.5s ease;
+}
+
+.sticky-icon a {
+  transform: translate(0px, 0px);
+  border-radius: 50px 0px 0px 50px;
+  margin: 0px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 5px;
+  font-size: 20px;
+  transition: all 0.8s;
+}
+
+.sticky-icon a:hover i {
+  transform: rotate(360deg);
+}
+.Facebook {
+  background-color: #3b5998;
+  color: #fff;
+}
+
+.Whatsapp {
+  background-color: #25d366;
+  color: #fff;
+}
+
+.Instagram {
+  background-color: #e94475;
+  color: #fff;
+}
+
+.sticky-icon a i {
+  background-color: #fff;
+  height: 35px;
+  width: 35px;
+  color: #000;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+
+@media screen and (max-width: 576px) {
+  .sticky-icon a {
+    padding: 5px;
+    font-size: 16px;
+  }
+  .sticky-icon a i {
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+  }
+}
+.sticky-icon a i.fa-facebook-f {
+  background-color: #fff;
+  color: #3b5998;
+}
+
+.sticky-icon a i.fa-instagram {
+  background-color: #fff;
+  color: #e94475;
+}
+
+.sticky-icon a i.fa-whatsapp {
+  background-color: #fff;
+  color: #25d366;
+}
